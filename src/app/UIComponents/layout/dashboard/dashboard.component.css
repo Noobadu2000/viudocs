@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+  margin: 30px auto;
+  font-style: normal;
+  font-variant-caps: titling-caps;
+  color: darkslateblue;
+  font-size: 35px;
+  max-width: 600px;
+position: relative;
+}
+.title::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 6px;
+  background: slateblue;
+  position: absolute;
+  left: 45px;
+  top: 50%;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 6px;
+  background: slateblue;
+  position: absolute;
+  right: 45px;
+  top: 50%;
+}
+.content {
+  font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
+    text-transform: capitalize;
+    line-height: 1.6;
+}

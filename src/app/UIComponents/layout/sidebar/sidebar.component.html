@@ -1,0 +1,33 @@
+<mat-nav-list class="sidebar">
+  <div *ngIf="validuser" class="profile-card">
+    <img src="../../../../assets/images/bhargava.jpg" />
+    <div class="header">
+      <h2>Bhargava</h2>
+      <h4>vutukurubhargava@gmail.com</h4>
+    </div>
+  </div>
+  <mat-list-item *ngIf="validuser"
+    ><mat-icon>account_circle</mat-icon> profile</mat-list-item
+  >
+  <mat-divider></mat-divider>
+  <mat-list-item *ngIf="validuser" (click)="uploadDocuments()"
+    ><mat-icon>cloud_upload</mat-icon
+    ><span> UplaodDocuments</span></mat-list-item
+  >
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/"
+    ><mat-icon>house</mat-icon><span>Dashboard</span></a
+  >
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLinkActive="list-item-active" (click)="aboutus()"
+    ><mat-icon>people_alt</mat-icon>AboutUs</a>
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLinkActive="list-item-active" (click)="aboutus()">
+    <mat-icon>message</mat-icon>Blogs
+  </a>
+    <mat-divider></mat-divider>
+    <a mat-list-item routerLinkActive="list-item-active" (click)="contactus()"
+      ><mat-icon>contacts</mat-icon> ContactUs</a
+    >
+    <mat-divider></mat-divider>
+</mat-nav-list>
