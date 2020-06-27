@@ -2,7 +2,7 @@ import { DataserviceService } from './../dataservice.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthRoutingModule } from './auth-routing.module';
+import { authRoutes } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -20,18 +20,15 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
   declarations: [LoginComponent, VerfierloginComponent, RegistrationComponent],
   imports: [
     CommonModule,
-    AuthRoutingModule,
     FormsModule,
     MatCardModule,
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    RouterModule.forChild(authRoutes)
   ],
-  exports: [
-  ],
-  providers: [DataserviceService
-  ]
+  providers: [DataserviceService]
 })
 export class AuthModule { }

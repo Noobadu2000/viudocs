@@ -5,11 +5,10 @@ import { NotificationsComponent } from './UIComponents/layout/notifications/noti
 import { SearchEmplyeeComponent } from './UIComponents/main/search-emplyee/search-emplyee.component';
 import { AboutusComponent } from './UIComponents/layout/aboutus/aboutus.component';
 import { DashboardComponent } from './UIComponents/layout/dashboard/dashboard.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule, CanActivate } from '@angular/router';
+import { Routes } from '@angular/router';
 import { UploaddocumentsComponent } from './UIComponents/main/uploaddocuments/uploaddocuments.component';
 
-const routes: Routes = [
+export const AppRoutes: Routes = [
   { path: '', component: DashboardComponent },
   {
     path: 'auth',
@@ -19,7 +18,7 @@ const routes: Routes = [
         path: '',
         loadChildren: './auth/auth.module#AuthModule'
       }
-    ]
+    ],
   },
   {
     path: 'aboutus',
@@ -41,8 +40,8 @@ const routes: Routes = [
 
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
+// export class AppRoutingModule { }

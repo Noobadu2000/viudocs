@@ -7,7 +7,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { NgModule } from '@angular/core';
 import { environment } from './../environments/environment';
 import { MatCheckboxModule, MAT_CHECKBOX_CLICK_ACTION } from '@angular/material/checkbox';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -53,6 +53,7 @@ export {
 import { PDFJSStatic } from 'pdfjs-dist';
 import { NotificationsComponent } from './UIComponents/layout/notifications/notifications.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
+import { RouterModule } from '@angular/router';
 
 declare global {
   const PDFJS: PDFJSStatic;
@@ -104,7 +105,7 @@ declare global {
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
-    AppRoutingModule,
+    RouterModule.forRoot(AppRoutes),
     // AuthModule,
     BrowserAnimationsModule,
     CommonModule,
