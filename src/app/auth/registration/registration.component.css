@@ -1,0 +1,29 @@
+#label {
+  text-align: left;
+  font-family: 'SofiaPro-Light';
+  font-size: 10pt;
+  font-weight: 0;
+}
+.register {
+  background-color:#64308f;
+  color:white;
+}
+  
+@font-face {
+  font-family: 'SofiaPro-Medium';
+  src: URL("../../assets/ttf/Sofia Pro Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'SofiaPro-Light';
+  src: URL("../../assets/ttf/Sofia Pro Medium.ttf") format('truetype');
+}
+.header-label {
+  font-family: SofiaPro-Medium;
+  font-size: 14pt;
+  padding-left: 20px;
+  text-align: left;
+}
+input {
+  height: 41px;
+  background-color: #ebebeb;
+}

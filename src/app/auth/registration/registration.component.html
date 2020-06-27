@@ -1,0 +1,68 @@
+<p class="heading header-label">Create an account.</p>
+<form [formGroup]="regform" (ngSubmit)="regSubmit()" style="padding:10%;padding-top: 5px;">
+  <!-- <img src="../../../assets/images/registericon.png" height="100px" width="100px"/> -->
+  <mat-error *ngIf="loginInvalid">
+    The username and password were not recognised
+  </mat-error>
+
+  <div id="label" class="form-group">
+    <label for="usr">First Name:</label>
+    <input type="text" placeholder="Enter First Name" class="form-control" formControlName="firstname" id="firstname"
+      required>
+      <p class="help-block" style="color: red;" *ngIf="!regform.controls['firstname'].valid && regform.controls['firstname'].touched">
+        First name cannot be empty</p>
+  </div>
+
+
+  <div id="label" class="form-group">
+    <label for="usr">Last Name:</label>
+    <input type="text" placeholder="Enter Last Name" class="form-control" formControlName="lastname" id="lastname"
+      required>
+      <p class="help-block" style="color: red;" *ngIf="!regform.controls['lastname'].valid && regform.controls['lastname'].touched">
+        Last name cannot be empty</p>
+  </div>
+
+
+  <!-- <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+  <div id="label" class="form-group">
+    <label for="usr">EmailId:</label>
+    <input type="text" placeholder="Enter Email Id" class="form-control" formControlName="username" id="emailid"
+      required>
+    <p class="help-block" style="color: red;" *ngIf="!regform.controls['username'].valid && regform.controls['username'].touched">
+      Incorrect email id</p>
+  </div>
+
+  <div id="label" class="form-group">
+    <label for="usr">Mobile Number:</label>
+    <input type="text" placeholder="Enter Mobile Number" class="form-control" formControlName="phonenumber"
+      id="phonenumber" required>
+      <p class="help-block" style="color: red;" *ngIf="!regform.controls['phonenumber'].valid && regform.controls['phonenumber'].touched">
+        Phone number name cannot be empty</p>
+  </div>
+
+  <div id="label" class="form-group">
+    <label for="usr">Password:</label>
+    <input type="password" placeholder="Enter Password " class="form-control" formControlName="password" id="password"
+      required>
+      <p class="help-block" style="color: red;" *ngIf="!regform.controls['password'].valid && regform.controls['password'].touched">
+       Password cannot be empty</p>
+  </div>
+
+  <div id="label" class="form-group">
+    <label for="usr">Confirm Password:</label>
+    <input type="password" placeholder="Confirm Password" class="form-control" formControlName="cnfpassword"
+      id="confirmPassword" required>
+      <p class="help-block" style="color: red;" *ngIf="!regform.controls['cnfpassword'].valid && regform.controls['cnfpassword'].touched">
+        Confirm Password cannot be empty</p>
+  </div>
+
+
+  <mat-checkbox>Remember me?</mat-checkbox><br>
+  <button class="btn register">Register</button>
+</form>

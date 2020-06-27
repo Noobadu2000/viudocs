@@ -1,0 +1,65 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button id="mbutton" (click)="toggleSideBar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-start" class="flexgap">
+      <ul fxLayout="row">
+        <li class="Home">
+          HOME
+        </li>
+        <li class="headelem">
+          ABOUT
+        </li>
+        <li class="headelem">
+          BLOGS
+        </li>
+        <li class="headelem">
+          TEAM
+        </li>
+      </ul>
+    </div>
+
+    <span fxFlex fxLayoutAlign="flex-middle">
+      <img src="../../../../assets/images/logo1.png" width="150px" height="100px" />
+    </span>
+
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="flexgap">
+      <ul fxLayout="row">
+        <li>
+          <button class="btn mybutton" [matMenuTriggerFor]="menu" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false" (click)="loginclick()" (change)="clicking()"
+            *ngIf="!isLoggedIn">
+            <span>
+              <span class="headText">Login</span>
+              <mat-icon style="vertical-align: middle;" [hidden]="!panelOpenState">arrow_drop_down</mat-icon>
+              <mat-icon style="vertical-align: middle;" [hidden]="panelOpenState">arrow_drop_up</mat-icon>
+            </span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="route('auth/user_login')">User Login</button>
+            <button mat-menu-item (click)="route('auth/verfier_login')">
+              Verifier Login
+            </button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- <button mat-icon-button  > -->
+          <button class="btn mybutton" routerLink="auth/Registration" (click)="route('auth/Registration')"
+            *ngIf="!isLoggedIn">
+            <!-- <mat-icon style="vertical-align: bottom;" class="headIcon">group_add</mat-icon> -->
+            <a class="logintext"><span class="headText">Register</span></a>
+          </button>
+        </li>
+        <li>
+          <button class="btn mybutton" (click)="logout()" *ngIf="isLoggedIn">
+            <!-- <mat-icon style="vertical-align: bottom;"  class="headIcon">exit_to_app</mat-icon> -->
+            <a class="logintext"><span class="headText">Logout</span></a>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>

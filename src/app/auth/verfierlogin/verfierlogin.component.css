@@ -1,0 +1,53 @@
+#label {
+  text-align: left;
+  font-family: 'SofiaPro-Light';
+  font-size: 10pt;
+  font-weight: 0;
+}
+  
+@font-face {
+  font-family: 'SofiaPro-Medium';
+  src: URL("../../assets/ttf/Sofia Pro Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'SofiaPro-Light';
+  src: URL("../../assets/ttf/Sofia Pro Medium.ttf") format('truetype');
+}
+.header-label {
+  font-family: SofiaPro-Medium;
+  font-size: 14pt;
+  padding-left: 20px;
+  text-align: center;
+}
+.sign-caption {
+  font-family: SofiaPro-Light;
+  font-size: 11pt;
+  text-align: center;
+}
+.registration-caption {
+  font-family: 'SofiaPro-Light';
+  font-size: 9pt;
+  color: #575757;
+  margin-bottom: 0px;
+}
+input {
+  height: 41px;
+  background-color: #ebebeb;
+}
+.forgot-password{
+  text-align: center;
+  font-family: 'SofiaPro-Light';
+  font-size: 9pt;
+  color: #575755;
+}
+.accept-text {
+  color: #64308f;
+}
+.terms-condition{
+  font-family: 'SofiaPro-Light';
+  font-size: 9pt;
+}
+.register {
+  background-color:#64308f;
+  color:white;
+}

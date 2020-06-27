@@ -1,0 +1,103 @@
+ul li {
+  list-style: none;
+}
+.logintext {
+  vertical-align: sub;
+  /* margin-right: 20px;
+  padding-left: 3px; */
+  webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-shadow: #fff 0px 1px 1px; */
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  /* font-smooth: inherit; */
+  /* font-weight: normal; */
+  font-style: normal;
+  font-size: medium;
+}
+.flexgap {
+  margin-right: 50px;
+  margin-top: 15px;
+}
+li {
+  padding-right:5px;
+  margin-right:10px;
+}
+.flexgap {
+  margin-right:50px;
+}
+.mat-toolbar.mat-primary {
+  /* background: linear-gradient(to bottom, white 0%, lightgray 100%); */
+  background: #fff;
+  color: #fff;
+}
+.mybutton   {
+  background-color: #652d92;
+  border-color:#652d92;
+  color:#eee;
+}
+.mybutton:focus  {
+  background-color: #652d92;
+}
+.mybutton:hover {
+  background-color: #652d92;
+}
+.mybutton:not(:disabled):not(.disabled):active:focus {
+  box-shadow: #652d92 !important ;
+}
+#mbutton {
+  background-color: green;
+  border-radius: 0;
+}
+.headIcon {
+  margin-right: 5px;
+}
+.headText {
+  /* font-size: medium; */
+  font-family: 'Raleway', sans-serif;
+}
+.mat-menu-item:hover:not([disabled]) {
+  background: rgba(0,0,0,.04);
+    border: none !important;
+}
+button:focus  {
+  outline: none !important;
+}
+.Home {
+  color: green;
+  /* font-family: "Nunito Sans", sans-serif; */
+  /* font-family: Impact, Charcoal, sans-serif; */
+  box-shadow: green;
+  webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: #fff 0px 1px 1px;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  /* font-smooth: inherit; */
+  /* font-weight: normal; */
+  font-style: normal;
+  margin-right:50px;
+}
+.headelem {
+  color: black;
+  /* font-family: Impact, Charcoal, sans-serif; */
+  webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: #fff 0px 1px 1px;
+    -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+    /* font-smooth: inherit; */
+    /* font-weight: normal; */
+    font-style: normal;
+  margin-right:50px;
+
+}
+.mat-icon-button {
+  padding: 0;
+  min-width: 0;
+  width: 31px;
+  height: 30px;
+  flex-shrink: 0;
+  line-height: 25px;
+  border-radius: 50%;
+}

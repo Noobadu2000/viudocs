@@ -1,0 +1,82 @@
+
+@import "~fontsource-sofia/index.css";
+/* @import "~fontsource-sofia/vietnamese-300-italic.css"; */
+
+mat-card-title.mat-card-title {
+  text-align: -webkit-center;
+}
+mat-card {
+  text-align: center;
+  margin-right: -15px;
+  height:614px;
+}
+
+mat-form-field {
+  display: block;
+}
+.Register{
+background-image: url("../../assets/images/Background.jpg");
+/* background-image: url(Background.jpg); */
+    height: 614px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+  @font-face {
+    font-family: 'SofiaPro-Medium';
+    src: URL("../../assets/ttf/Sofia Pro Medium.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: 'SofiaPro-Light';
+    src: URL("../../assets/ttf/Sofia Pro Medium.ttf") format('truetype');
+  }
+
+  #about {
+     font-family: 'SofiaPro-Light';
+     color: whitesmoke;
+     position: absolute;
+     top: 574px;
+     left: 33px;
+  }
+  #about:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #faq {
+    font-family: 'SofiaPro-Light';
+    color: whitesmoke;
+    position: absolute;
+    top: 574px;
+    left: 108px;
+  }
+  #faq:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+#contact{
+  font-family: 'SofiaPro-Light';
+  color: whitesmoke;
+  position: absolute;
+  top: 574px;
+  left: 182px;
+}
+#contact:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.heading {
+  font-family: 'SofiaPro-Medium';
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 22px;
+}
+.mat-form-field .mat-form-field-invalid .mat-form-field-label{
+  font-family: 'SofiaPro-Light';
+  font-size: 15pt;
+}
+
+/* .col-md-12 {
+  height:950px;
+} */
