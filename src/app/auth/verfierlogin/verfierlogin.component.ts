@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataserviceService } from '../../dataservice.service';
 import { FirebaseserviceService } from '../../firebaseservice.service';
+import { AngularFirestore ,AngularFirestoreModule} from '@angular/fire/firestore';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-verfierlogin',

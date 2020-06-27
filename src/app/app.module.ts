@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireStorage, AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreModule  } from '@angular/fire/firestore';
+import 'firebase/firestore';
+import { firestore } from 'firebase';
 import { NgModule } from '@angular/core';
 import { environment } from './../environments/environment';
 import { MatCheckboxModule, MAT_CHECKBOX_CLICK_ACTION } from '@angular/material/checkbox';
@@ -59,15 +61,15 @@ declare global {
   const PDFJS: PDFJSStatic;
 }
 // const routes: Routes = [
-//   {path: '', component: DashboardComponent},
-//   {path: 'user_login', component: LoginComponent},
-//   {path: 'verfier_login', component: VerfierloginComponent},
-//   {path: 'aboutus', component: AboutusComponent},
-//   {path: 'contactus', component: ContactusComponent},
-//   {path: 'Registration', component: RegistrationComponent},
-//   {path : 'upload_docs', component: UploaddocumentsComponent},
-//   {path: 'search-employee', component: SearchEmplyeeComponent},
-//   {path: 'notifications', component: NotificationsComponent}
+//   // {path: '', component: DashboardComponent},
+//   // {path: 'user_login', component: LoginComponent},
+//   // {path: 'verfier_login', component: VerfierloginComponent},
+//   // {path: 'aboutus', component: AboutusComponent},
+//   // {path: 'contactus', component: ContactusComponent},
+//   // {path: 'Registration', component: RegistrationComponent},
+//   // {path : 'upload_docs', component: UploaddocumentsComponent},
+//   // {path: 'search-employee', component: SearchEmplyeeComponent},
+//   // {path: 'notifications', component: NotificationsComponent}
 
 // ];
 // var firebaseConfig = {
@@ -111,6 +113,7 @@ declare global {
     CommonModule,
     SharedModule,
     MatSidenavModule,
+    AngularFirestoreModule,
     // AuthModule,
     FormsModule,
     ReactiveFormsModule,

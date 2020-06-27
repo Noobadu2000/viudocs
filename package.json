@@ -41,7 +41,7 @@
     "bootstrap": "^3.4.1",
     "core-js": "^2.5.4",
     "file-drop-element": "^0.2.0",
-    "firebase": "^7.14.5",
+    "firebase": "^7.15.5",
     "fontsource-sofia": "^2.1.3",
     "jquery": "^3.5.1",
     "loadash": "^1.0.0",
